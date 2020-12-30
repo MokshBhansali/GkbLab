@@ -5,7 +5,6 @@ import '../global/images.dart';
 import '../widgets/commonWidgets.dart';
 import '../utils/screenUtils.dart';
 import '../services/authServices.dart';
-// import '../';
 class LoginScreen extends StatefulWidget {
   @override
   _LoginScreenState createState() => _LoginScreenState();

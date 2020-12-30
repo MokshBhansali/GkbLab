@@ -3,7 +3,6 @@ import 'package:flutter/rendering.dart';
 import 'tab/homeScreen.dart';
 import 'tab/logoutScreen.dart';
 import 'tab/profileScreen.dart';
-import '../global/app.dart';
 import '../global/colors.dart';
 
 class MainScreen extends StatefulWidget {
