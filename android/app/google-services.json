@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "950013111724",
+    "project_id": "gkblab-e6bc0",
+    "storage_bucket": "gkblab-e6bc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950013111724:android:a50f7d29ad14eab5fbde09",
+        "android_client_info": {
+          "package_name": "com.example.gkblab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950013111724-ub73jpffurrh2giq2rr07ctm5s88mve6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXp-sE-UHQxwUjuVHZrGsPySoi9SzkCU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950013111724-ub73jpffurrh2giq2rr07ctm5s88mve6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

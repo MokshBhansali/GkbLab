@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../global/colors.dart';
-
+import 'package:share/share.dart';
 SizedBox mySizedBox(
     {@required double myHeight, @required double myWidth, child}) {
   return SizedBox(
@@ -109,4 +109,8 @@ Text myDataText({
     overflow: TextOverflow.ellipsis,
     style: myTextStyle,
   );
+}
+
+getShare(txt1, txt2) async {
+  await Share.share(txt1 + "\n" + txt2);
 }

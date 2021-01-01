@@ -31,9 +31,15 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  cached_network_image: ^2.5.0
+  firebase_in_app_messaging: ^0.2.3
+  firebase_messaging: ^7.0.3
+  flutter_share: ^1.0.5
   http: ^0.12.2
+  intl: ^0.16.1
   local_auth: ^0.6.3+4
   permission_handler: ^5.0.1+1
+  share: ^0.6.5+4
   shared_preferences: ^0.5.12+4
 
 # For information on the generic Dart part of this file, see the
