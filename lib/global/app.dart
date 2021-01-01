@@ -1,5 +1,5 @@
 class AppString {
-  static const AppName = "Jain Stavanavali";
+  static const AppName = "Gkb Lab";
   static const ValidPasswordTxt = "Enter Valid Password";
   static const EmailTxt = "Email";
   static const PasswordTxt = "Password";
