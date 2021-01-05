@@ -18,7 +18,7 @@ getUsersLogin(email, password, context, key) async {
     await sp.setString('email', result["data"]['email']);
     await sp.setString('lastName', result["data"]['last_name']);
     await sp.setString('firstName', result["data"]['first_name']);
-    nextScreenReplace(context, "/Home");
+    nextScreenReplace(context, "/Main");
   } else {
     showSnackbar(key, "User Not Found", ColorPlate.RedColor);
   }
@@ -54,7 +54,7 @@ class FingerAuth {
         ? print('User is authenticated!')
         : print('User is not authenticated.');
     if (isAuthenticated) {
-      nextScreenReplace(context, "/Home");
+      showSnackbar(key, "User Verified Successfully", ColorPlate.BlueColor);
     } else {
       showSnackbar(key, "Invalid Fingerprint", ColorPlate.RedColor);
     }

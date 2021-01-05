@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Text(AppString.FingerAuthTxt),
           onPressed: () async {
             if (await fingerAuth.isBiometricAvailable()) {
-              await fingerAuth.authenticateUser(context, scaffoldKey);
+              await fingerAuth.authenticateUser(context, scaffoldKey.currentState);
             }
           },
         ),

@@ -6,6 +6,7 @@ import 'tab/postScreen.dart';
 import 'tab/profileScreen.dart';
 import '../global/colors.dart';
 import 'package:firebase_in_app_messaging/firebase_in_app_messaging.dart';
+
 class MainScreen extends StatefulWidget {
   @override
   _MainScreenState createState() => _MainScreenState();
@@ -14,13 +15,12 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   static FirebaseInAppMessaging fiam = FirebaseInAppMessaging();
   @override
-  void initState() { 
+  void initState() {
     super.initState();
     fiam.setMessagesSuppressed(true);
     fiam.setAutomaticDataCollectionEnabled(true);
-    
-    
   }
+
   int currentIndex = 0;
   final List<Widget> children = [
     HomeScreen(),

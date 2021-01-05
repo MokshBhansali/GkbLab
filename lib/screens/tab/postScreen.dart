@@ -20,18 +20,26 @@ class _PostScreenState extends State<PostScreen> {
               IconButton(
                 icon: Icon(Icons.notifications),
                 onPressed: () {},
-                tooltip: dataLength.toString() + " Post Found ",
               ),
-              Container(
-                padding: EdgeInsets.all(5),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(5),
-                  color: ColorPlate.RedColor,
-                ),
-                child: Text(
-                  dataLength.toString() ?? 0,
-                  style: TextStyle(fontSize: 10),
-                ),
+              FutureBuilder(
+                future: getPost(),
+                builder: (BuildContext context, AsyncSnapshot snapshot) {
+                  if (!snapshot.hasData || snapshot.data == null) {
+                    return Center();
+                  } else {
+                    return Container(
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                        color: ColorPlate.RedColor,
+                      ),
+                      child: Text(
+                        snapshot.data.length.toString() ?? 0,
+                        style: TextStyle(fontSize: 10),
+                      ),
+                    );
+                  }
+                },
               ),
             ],
           ),

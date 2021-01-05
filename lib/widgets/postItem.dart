@@ -84,7 +84,7 @@ class PostItem extends StatelessWidget {
                   children: [
                     FlatButton.icon(
                       label: Text("Share"),
-                      onPressed: () => getShare("", ""),
+                      onPressed: () => getShare(myData.email.toString(), myData.postData.toString()),
                       icon: Icon(Icons.share, color: ColorPlate.GreyColor),
                     ),
                   ],
